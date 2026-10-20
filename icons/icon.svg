@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12032b"/><stop offset=".55" stop-color="#4a0f6e"/><stop offset="1" stop-color="#9a1a78"/></linearGradient>
+<linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe45e"/><stop offset=".55" stop-color="#ff8a2e"/><stop offset="1" stop-color="#ff2e88"/></linearGradient>
+<linearGradient id="pad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffe45e"/><stop offset=".5" stop-color="#ff5ab8"/><stop offset="1" stop-color="#a64bff"/></linearGradient>
+<radialGradient id="ballg"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset=".3" stop-color="#7df3ff" stop-opacity=".85"/><stop offset="1" stop-color="#31e8ff" stop-opacity="0"/></radialGradient>
+<mask id="stripes"><rect width="512" height="512" fill="#fff"/><rect x="0" y="385" width="512" height="5" fill="#000"/><rect x="0" y="405" width="512" height="8" fill="#000"/><rect x="0" y="429" width="512" height="11" fill="#000"/></mask>
+<filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="512" height="512" fill="url(#bg)"/>
+<g transform="translate(256 256) scale(1) translate(-256 -256)">
+<g mask="url(#stripes)"><circle cx="256" cy="372" r="140" fill="url(#sun)"/></g>
+<g filter="url(#glow)" stroke-width="5" fill-opacity=".22">
+<rect x="88" y="78" width="96" height="46" rx="11" fill="#ff2e88" stroke="#ff2e88"/>
+<rect x="208" y="78" width="96" height="46" rx="11" fill="#31e8ff" stroke="#31e8ff"/>
+<rect x="328" y="78" width="96" height="46" rx="11" fill="#ffe45e" stroke="#ffe45e"/>
+<rect x="88" y="138" width="96" height="46" rx="11" fill="#a64bff" stroke="#a64bff"/>
+<rect x="208" y="138" width="96" height="46" rx="11" fill="#ff8a2e" stroke="#ff8a2e"/>
+<rect x="328" y="138" width="96" height="46" rx="11" fill="#ff2e88" stroke="#ff2e88"/>
+</g>
+<path d="M214 168 L268 236 L300 300" stroke="#ffe45e" stroke-opacity=".0" fill="none"/>
+<g filter="url(#glow)"><path d="M214 316 Q262 262 318 226" stroke="#7df3ff" stroke-width="12" stroke-linecap="round" fill="none" stroke-opacity=".6"/></g>
+<circle cx="326" cy="220" r="50" fill="url(#ballg)"/>
+<circle cx="326" cy="220" r="19" fill="#31e8ff"/><circle cx="326" cy="220" r="11" fill="#fff"/>
+<rect x="156" y="432" width="200" height="26" rx="13" fill="url(#pad)" filter="url(#glow)"/>
+<rect x="176" y="438" width="160" height="5" rx="2.5" fill="#fff" fill-opacity=".75"/>
+</g>
+</svg>
